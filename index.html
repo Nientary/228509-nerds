@@ -2,11 +2,169 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+  <body>  
+      <header class="main-header">
+          <div class="container">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="Логотип" width="160" height="65">
+                  </a>
+              </div>
+              <nav class="main-menu">
+                  <ul>
+                      <li>
+                          <a href="#">Студия</a>
+                      </li>
+                      <li>
+                          <a href="#">Клиенты</a>
+                      </li>
+                      <li>
+                          <a href="catalog.html">Магазин</a>
+                      </li>
+                      <li>
+                          <a href="#">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+              <div class="user-block">
+                  <a href="#">Корзина</a>
+              </div>
+              <div class="slider">
+                  <div class="slider-slides">
+                      <div class="slide-1">
+                          <div class="slide-left">
+                              <div class="slogan">Долго, дорого, скрупулезно.</div>
+                              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                              <a class="btn" href="#">Узнать больше</a>
+                          </div>
+                          <div class="slide-right">
+                              <img src="img/slide1.png" width="692" height="413" alt="Слайд 1">
+                          </div>
+                      </div>
+                      <div class="slide-2">
+                          <div class="slide-left">
+                              <div class="slogan">Любим математику как никто другой</div>                              
+                              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                              <a class="btn" href="#">Узнать больше</a>
+                          </div>
+                          <div class="slide-right">
+                              <img src="img/slide2.png" width="663" height="431" alt="Слайд 2">
+                          </div>                
+                       </div>
+                      <div class="slide-3">
+                          <div class="slide-left">
+                              <div class="slogan">Только ночь, только хардкор</div>
+                              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                              <a class="btn" href="#">Узнать больше</a>
+                          </div>
+                          <div class="slide-right">
+                              <img src="img/slide3.png" width="759" height="410" alt="Слайд 3">
+                          </div>
+                       </div>
+                  </div>
+                  <div class="slider-controls">
+                      <input name="slider-control" id="toggle-1" type="radio" checked>
+                      <label for="toggle-1"></label>
+                      <input name="slider-control" id="toggle-2" type="radio">
+                      <label for="toggle-2"></label>
+                      <input name="slider-control" id="toggle-3" type="radio">
+                      <label for="toggle-3"></label>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <main class="container">
+          <section class="options">
+              <div class="option-1">
+                  <img src="img/option-1.jpg" alt="Вебсайты" width="300" height="146">
+                  <h2>Веб-сайты</h2>
+                  <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                  <a class="btn button-1" href="#">Заказать</a>
+              </div>
+              <div class="option-2">
+                  <img src="img/option-2.jpg" alt="Приложения" width="300" height="146">
+                  <h2>Приложения</h2>
+                  <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                  <a class="btn button-2" href="#">Заказать</a>
+              </div>
+              <div class="option-3">
+                  <img src="img/option-3.jpg" alt="Презентации" width="300" height="146">
+                  <h2>Презентации</h2>
+                  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                  <a class="btn button-3" href="#">Заказать</a>
+              </div>
+          </section>
+          <div class="index-cotent">
+              <div class="index-content-left">
+                  <b class="promo">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                  <b>Выполняем заказы на разработку:</b>
+                  <ul>
+                      <li>Веб-сайтов любой сложности</li>
+                      <li>Мобильных приложений для iOS и Android</li>
+                      <li>Слайдшоу и видео для корпоративных презентаций</li>
+                  </ul>
+              </div>
+              <div class="index-content-right">
+                  <img src="img/logo-2.jpg" alt="Логотип" width="358" height="213">
+                  <div class="promo">С 2004 года любим точность во всем:</div>
+                  <div class="features">
+                      <div class="features-item">
+                          <b class="percent">146<sup>%</sup></b>
+                          <b class="feature">Уровень самоотдачи</b>
+                      </div>
+                       <div class="features-item">
+                          <b class="percent">100<sup>%</sup></b>
+                          <b class="feature">Соблюдение сроков</b>
+                      </div>
+                       <div class="features-item">
+                          <b class="percent">50<sup>%</sup></b>
+                          <b class="feature">Минимальная предоплата</b>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <section class="portfolio">
+              <a href="#">
+                  <img src="img/htmlacademy.png" alt="Htmlacademy" width="200" height="68">                  
+              </a>
+              <a href="#">
+                   <img src="img/borodinski.png" alt="Borodinski" width="302" height="85">                  
+              </a>
+              <a href="#">
+                  <img src="img/pink.png" alt="Pink" width="302" height="51">                  
+              </a>
+              <a href="#">
+                  <img src="img/mishka.png" alt="Mishka" width="173" height="83">
+              </a>
+          </section>
+          <section class="contacts">
+              <div class="map">
+                  <img src="img/map.jpg" alt="Карта" width="1000" height="416">
+              </div>
+              <div class="contact-info">
+                  <h2>NЁRDS DESIGN STUDIO</h2>
+                  <p>191186, Санкт-Петербург,<br>
+                      ул. Б. Конюшенная, д. 19/8</p>
+                  <p>тел. +7 (812) 275-75-75</p>
+                  <a class="btn" href="#">Напишите нам</a>
+              </div>
+          </section>
+      </main>
+      <footer class="main-footer">
+          <div class="container">
+              <section class="social-buttons">
+                  <a href="#">Vk</a>
+                  <a href="#">Fb</a>
+                  <a href="#">Инстаграм</a>
+              </section>
+              <div class="offer">
+                  <b class="offer-title">Давайте дружить, это выгодно!</b>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
+          </div>
+      </footer>
+    </body>
 </html>

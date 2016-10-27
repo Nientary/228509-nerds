@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс</title>
+  </head>
+  <body>  
+      <header class="main-header">
+          <div class="container">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="Логотип" width="160" height="65">
+                  </a>
+              </div>
+              <nav class="main-menu">
+                  <ul>
+                      <li>
+                          <a href="#">Студия</a>
+                      </li>
+                      <li>
+                          <a href="#">Клиенты</a>
+                      </li>
+                      <li>
+                          <a href="catalog.html">Магазин</a>
+                      </li>
+                      <li>
+                          <a href="#">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+              <div class="user-block">
+                  <a href="#">Корзина</a>
+              </div>
+              <h1>Магазин готовых шаблонов</h1>
+          </div>
+      </header>
+      <main class="container">
+          <div class="filters">
+              <form action="#" method="get" oninput="priceoutput.value=pricerange.value">
+                  <div class="filter price">
+                      <label class="filter-title">
+                          Стоимость:
+                          <input type="range" id="pricerange" min="0" max="15000">
+                      </label>
+                      <div class="price-output">
+                          От <output name="min">0</output> до <output name="priceoutput"></output>
+                      </div>
+                  </div>
+                  <div class="filter layout">
+                      <h2 class="filter-title">Сетка</h2>
+                      <label>
+                          <input type="radio" name="layout" value="adaptive">
+                          Адаптивная
+                      </label>
+                      <label>                          
+                          <input type="radio" name="layout" value="fixed">
+                          Фиксированная
+                      </label>
+                      <label>                          
+                          <input type="radio" name="layout" value="elastic">
+                          Резиновая
+                      </label>
+                  </div>
+                  <div class="filter features-filter">
+                      <h2 class="filter-title">Особенности:</h2>
+                      <label>
+                          <input type="checkbox" checked>Слайдер
+                      </label>
+                      <label>
+                          <input type="checkbox">Блок преимуществ
+                      </label>
+                      <label>
+                          <input type="checkbox" checked>Новости
+                      </label>
+                      <label>
+                          <input type="checkbox">Галерея
+                      </label>
+                      <label>
+                          <input type="checkbox">Корзина
+                      </label>
+                      <button class="btn">Показать</button>
+                  </div>
+              </form>
+          </div>
+          <div class="sorting">
+              <b>Сортировать:</b>
+              <ul>
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По названию</a></li>           
+              </ul>
+              <div class="order">
+                  <a href="#">Кнопка-1</a>
+                  <a href="#">Кнопка-2</a>
+              </div>
+          </div>
+          <div class="templates">
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template1.jpg" alt="Седона" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">Sedona</a></h2>
+                      <p>Информационный сайт для туристов</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template2.jpg" alt="Pink" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">Pink App</a></h2>
+                      <p>Продуктовый лендинг приложения для iOS и Android</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template3.jpg" alt="Borodinski" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">Барбершоп Borodinski</a></h2>
+                      <p>.....</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template4.jpg" alt="Мишка" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">Mishka</a></h2>
+                      <p>.....</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template5.jpg" alt="А+" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">A+</a></h2>
+                      <p>.....</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="template-item">
+                  <div class="template-top">
+                  </div>
+                  <div class="template-picture">
+                      <img src="img/template6.jpg" alt="Квас" width="358" height="575">
+                  </div>
+                  <div class="hover-block">
+                      <h2><a href="#">Крафтовый квас</a></h2>
+                      <p>.....</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+          </div>
+          <ul class="paginator">
+              <li>
+                  <a class="disabled">1</a>
+              </li>
+              <li>
+                  <a href="#">2</a>
+              </li>
+              <li>
+                  <a href="#">3</a>
+              </li>
+              <li>
+                  <a href="#">Следующая</a>
+              </li>
+          </ul>
+          <section class="contacts">
+              <div class="map">
+                  <img src="img/map.jpg" alt="Карта" width="1000" height="416">
+              </div>
+              <div class="contact-info">
+                  <h2>NЁRDS DESIGN STUDIO</h2>
+                  <p>191186, Санкт-Петербург,<br>
+                      ул. Б. Конюшенная, д. 19/8</p>
+                  <p>тел. +7 (812) 275-75-75</p>
+                  <a class="btn" href="#">Напишите нам</a>
+              </div>
+          </section>
+      </main>
+      <footer class="main-footer">
+          <div class="container">
+              <section class="social-buttons">
+                  <a href="#">Vk</a>
+                  <a href="#">Fb</a>
+                  <a href="#">Инстаграм</a>
+              </section>
+              <div class="offer">
+                  <b class="offer-title">Давайте дружить, это выгодно!</b>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
+          </div>
+      </footer>
+  </body>
+</html>
