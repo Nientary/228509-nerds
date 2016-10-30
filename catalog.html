@@ -36,18 +36,25 @@
       </header>
       <main class="container">
           <div class="filters">
-              <form action="#" method="get" oninput="priceoutput.value=pricerange.value">
-                  <div class="filter price">
-                      <label class="filter-title">
-                          Стоимость:
-                          <input type="range" id="pricerange" min="0" max="15000">
-                      </label>
+              <form action="#" method="get">
+                  <div class="filter price">        
+                      <h2>Стоимость:</h2>
+                      <div class="price-range">
+                          <div class="price-scale">
+                              <span class="selected"></span>
+                          </div>
+                          <div class="price-min"></div>
+                          <div class="price-max"></div>
+                      </div>
                       <div class="price-output">
-                          От <output name="min">0</output> до <output name="priceoutput"></output>
+                          От
+                          <input class="output-min" type="number" value="0" readonly>
+                          до
+                          <input class="output-max" type="number" value="15000" readonly>                          
                       </div>
                   </div>
                   <div class="filter layout">
-                      <h2 class="filter-title">Сетка</h2>
+                      <h2>Сетка</h2>
                       <label>
                           <input type="radio" name="layout" value="adaptive">
                           Адаптивная
@@ -62,7 +69,7 @@
                       </label>
                   </div>
                   <div class="filter features-filter">
-                      <h2 class="filter-title">Особенности:</h2>
+                      <h2>Особенности:</h2>
                       <label>
                           <input type="checkbox" checked>Слайдер
                       </label>
@@ -78,7 +85,7 @@
                       <label>
                           <input type="checkbox">Корзина
                       </label>
-                      <button class="btn">Показать</button>
+                      <button class="btn gray">Показать</button>
                   </div>
               </form>
           </div>
@@ -95,76 +102,64 @@
               </div>
           </div>
           <div class="templates">
-              <div class="template-item">
-                  <div class="template-top">
-                  </div>
+              <div class="template-item">                
                   <div class="template-picture">
                       <img src="img/template1.jpg" alt="Седона" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">Sedona</a></h2>
                       <p>Информационный сайт для туристов</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
-                  <div class="template-top">
-                  </div>
                   <div class="template-picture">
                       <img src="img/template2.jpg" alt="Pink" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">Pink App</a></h2>
                       <p>Продуктовый лендинг приложения для iOS и Android</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
-                  <div class="template-top">
-                  </div>
                   <div class="template-picture">
                       <img src="img/template3.jpg" alt="Borodinski" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">Барбершоп Borodinski</a></h2>
                       <p>.....</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
-                  <div class="template-top">
-                  </div>
                   <div class="template-picture">
                       <img src="img/template4.jpg" alt="Мишка" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">Mishka</a></h2>
                       <p>.....</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
-              <div class="template-item">
-                  <div class="template-top">
-                  </div>
+              <div class="template-item">              
                   <div class="template-picture">
                       <img src="img/template5.jpg" alt="А+" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">A+</a></h2>
                       <p>.....</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
-                  <div class="template-top">
-                  </div>
                   <div class="template-picture">
                       <img src="img/template6.jpg" alt="Квас" width="358" height="575">
                   </div>
                   <div class="hover-block">
                       <h2><a href="#">Крафтовый квас</a></h2>
                       <p>.....</p>
-                      <a class="btn" href="#">9 900 руб.</a>
+                      <a class="btn red" href="#">9 900 руб.</a>
                   </div>
               </div>
           </div>
@@ -182,19 +177,19 @@
                   <a href="#">Следующая</a>
               </li>
           </ul>
-          <section class="contacts">
-              <div class="map">
-                  <img src="img/map.jpg" alt="Карта" width="1000" height="416">
-              </div>
-              <div class="contact-info">
-                  <h2>NЁRDS DESIGN STUDIO</h2>
-                  <p>191186, Санкт-Петербург,<br>
-                      ул. Б. Конюшенная, д. 19/8</p>
-                  <p>тел. +7 (812) 275-75-75</p>
-                  <a class="btn" href="#">Напишите нам</a>
-              </div>
-          </section>
       </main>
+      <section class="contacts">
+          <div class="map">
+              <img src="img/map.jpg" alt="Карта" width="1200" height="416">
+          </div>
+          <div class="contact-info">
+              <h1>NЁRDS DESIGN STUDIO</h1>
+              <p>191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a class="btn red" href="#">Напишите нам</a>
+          </div>
+      </section>      
       <footer class="main-footer">
           <div class="container">
               <section class="social-buttons">
