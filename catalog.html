@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>  
       <header class="main-header">
@@ -43,14 +44,14 @@
                           <div class="price-scale">
                               <span class="selected"></span>
                           </div>
-                          <div class="price-min"></div>
-                          <div class="price-max"></div>
+                          <div class="price-toggle price-toggle-min"></div>
+                          <div class="price-toggle price-toggle-max"></div>
                       </div>
                       <div class="price-output">
-                          От
-                          <input class="output-min" type="number" value="0" readonly>
-                          до
-                          <input class="output-max" type="number" value="15000" readonly>                          
+                          <label for="price-min">От</label>
+                          <input class="output-min" id="price-min" type="number" value="0" readonly>
+                          <label for="price-max">до</label>
+                          <input class="output-max" id="price-max" type="number" value="15000" readonly>                          
                       </div>
                   </div>
                   <div class="filter layout">
@@ -85,7 +86,7 @@
                       <label>
                           <input type="checkbox">Корзина
                       </label>
-                      <button class="btn gray">Показать</button>
+                      <button class="btn btn-gray">Показать</button>
                   </div>
               </form>
           </div>
@@ -109,7 +110,7 @@
                   <div class="hover-block">
                       <h2><a href="#">Sedona</a></h2>
                       <p>Информационный сайт для туристов</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
@@ -119,7 +120,7 @@
                   <div class="hover-block">
                       <h2><a href="#">Pink App</a></h2>
                       <p>Продуктовый лендинг приложения для iOS и Android</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
@@ -129,7 +130,7 @@
                   <div class="hover-block">
                       <h2><a href="#">Барбершоп Borodinski</a></h2>
                       <p>.....</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
@@ -139,7 +140,7 @@
                   <div class="hover-block">
                       <h2><a href="#">Mishka</a></h2>
                       <p>.....</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">              
@@ -149,7 +150,7 @@
                   <div class="hover-block">
                       <h2><a href="#">A+</a></h2>
                       <p>.....</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
               <div class="template-item">
@@ -159,7 +160,7 @@
                   <div class="hover-block">
                       <h2><a href="#">Крафтовый квас</a></h2>
                       <p>.....</p>
-                      <a class="btn red" href="#">9 900 руб.</a>
+                      <a class="btn btn-red" href="#">9 900 руб.</a>
                   </div>
               </div>
           </div>
@@ -187,7 +188,7 @@
               <p>191186, Санкт-Петербург,<br>
                   ул. Б. Конюшенная, д. 19/8</p>
               <p>тел. +7 (812) 275-75-75</p>
-              <a class="btn red" href="#">Напишите нам</a>
+              <a class="btn btn-red" href="#">Напишите нам</a>
           </div>
       </section>      
       <footer class="main-footer">
