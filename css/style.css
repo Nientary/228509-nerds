@@ -1,0 +1,26 @@
+body {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    color: #283136;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+h2,
+.contacts h1 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.options h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
