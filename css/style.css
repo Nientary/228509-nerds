@@ -1,26 +1,673 @@
+body > div,
+ul,
+header,
+header > div,
+.user-block,
+.logo,
+.slider,
+section,
+footer,
+.container,
+.container > div,
+.slider-controls {
+    outline: 1px solid black;
+}
+
+/*Общее*/
+
 body {
     font-size: 16px;
     line-height: 24px;
     font-family: "Roboto", "Arial", sans-serif;
     color: #283136;
+    padding: 0 20px;
+    margin: 0;
 }
 
-h1 {
-    font-size: 55px;
-    line-height: 55px;
+.container {
+    width: 1160px;
+    margin: 0 auto;
 }
 
-h2,
-.contacts h1 {
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 60px;
+}
+
+.main-header .container {
+    border-bottom: 1px solid transparent;
+}
+
+.logo {
+    float: left;
+    width: 160px;
+    margin-top: 49px;
+    margin-right: 200px;
+}
+
+.main-menu {
+    float: left;
+    width: 450px;
+    margin-top: 74px;
+    
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu a {
+    display: block;
+    font-family: "Roboto Medium", sans-serif;
+    padding-bottom: 11px;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.user-block {
+    float: right;
+    width: 160px;
+    margin-top: 75px;
+    text-align: right;
+}
+
+.user-block a {
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 18px;
+    padding: 16px 53px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contacts {
+  position: relative;
+    height: 416px;
+}
+
+
+.contact-info {
+    position: absolute;
+    width: 240px;
+    padding-top: 50px;
+    padding-bottom: 47px;
+    padding-left: 50px;
+    padding-right: 30px;
+    line-height: 18px;
+    top: 54px;
+    left: 19%;
+}
+
+
+h2 {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+}
+
+.contact-info h1 {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.contact-info .btn {
+    margin-top: 22px;
+}
+
+.main-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 69px;
+}
+
+.social-buttons {
+    float: left;
+    width: 261px;
+    margin-right: 139px;
+    font-size: 0;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin-right: 12px;
+    width: 79px;
+    height: 79px;
+}
+
+.social-buttons a:last-child {
+    margin-right: 0;
+}
+
+.offer {
+    float: left;
+    width: 560px;
+    line-height: 22px;
+    padding-top: 5px;
+}
+
+.offer b {
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    margin: 0;
+}
+
+
+
+/*Главная*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 1160px;
+    height: 423px;
+    vertical-align: middle;
+}
+
+.slider-slides {
+    width: 3800px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    width: 200px;
+    bottom: 90px;
+    left: 470px;
+    text-align: center;
+}
+
+.slider-controls input {
+    display: none;
+}
+
+.slider-controls label {
+    display: inline-block;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+    display: inline-block;
+    font-size: 0;
+}
+
+.slide-1,
+.slide-2 {
+    margin-right: 120px;
+}
+
+.slide-left {
+    width: 380px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    line-height: 24px;
+    margin-right: 15px;
+    margin-top: 65px;
+}
+
+.slide-right {
+    width: 760px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+        
+}
+
+.slider .slogan {
+    font-size: 55px;
+    line-height: 55px;
+    font-family: "Roboto Medium", sans-serif;
+    margin-bottom: 25px;
+    
+}
+
+.slide-left p {
+    width: 330px;
+    margin-bottom: 41px;
+}
+
+.slide-1 .slide-right {
+    margin-top: -11px;
+    margin-left: 6px;
+}
+
+.slide-2 .slide-left {
+    position: relative;
+    width: 510px;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.slide-2 p {
+    width: 410px;
+}
+
+.slide-2 .slide-right {
+    margin-left: -125px;
+    margin-top: -4px;
+}
+
+.slide-3 .slide-left {
+    position: relative;
+    width: 510px;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.slide-3 p {
+    width: 350px;
+}
+
+.slide-3 .slide-right {
+    margin-left: -125px;
+    margin-top: -6px;
+}
+
+
+.options {
+    padding-top: 20px;
+    border-bottom: 2px solid #eeeeee;
+    
+}
+
+.option {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+    margin-bottom: 80px;    
+}
+
+.option:last-child {
+    margin-right: 0;
 }
 
 .options h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Medium", sans-serif;
+    margin-bottom: 14px;
+}
+
+.option p {
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 33px;
+}
+
+.option .btn {
+    padding: 16px 40px;
+}
+
+.index-content {
+    padding-bottom: 53px;
+}
+
+.index-content-left {
+    float: left;
+    width: 668px;
+    margin-top: 73px;
+    
+}
+
+.index-content-left b {
+    text-transform: uppercase;
+}
+
+.index-content-right {
+    float: right;
+    width: 360px;
+    margin-top: 40px;
+}
+
+.index-content b.promo {
+    display: block;
+    font-size: 45px;
+    line-height: 45px;
+    text-transform: none;
+    margin-bottom: 31px;
+}
+
+.index-content-left p {
+    margin-bottom: 42px;
+}
+
+.index-content-left ul {
+    padding-left: 0;
+    padding-top: 23px;
+    margin: 0;
+    list-style: none;
+}
+
+.index-content-left li {
+    margin-bottom: 24px;
+}
+
+.index-content-right img {
+    margin-bottom: 29px;
+}
+
+.features {
+    font-size: 0;
+}
+
+.features-item {
+    display: inline-block;
+    width: 95px;
+    margin-right: 20px;
+    font-size: 16px;    
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.index-content-right .promo {
+    margin-bottom: 48px;
+}
+
+.features-item .percent {
+    font-size: 45px;
+    line-height: 10px;
+}
+
+.percent sup {
+    font-size: 26px;
+}
+
+.portfolio {
+    padding-top: 49px;
+    padding-bottom: 31px;
+    margin-bottom: 80px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    font-size: 0;
+}
+
+.portfolio a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.portfolio a img {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.portfolio a:first-child {
+    padding-left: 31px;
+    padding-right: 49px;
+    border-right: 2px solid #eeeeee;
+}
+
+.portfolio a:nth-child(2) {
+    padding: 0 45px;
+    margin-top: -5px;
+    border-right: 2px solid #eeeeee;
+}
+
+.portfolio a:nth-child(3) {
+    padding-left: 57px;
+    padding-right: 56px;
+    border-right: 2px solid #eeeeee;
+}
+
+.portfolio a:nth-child(4) {
+    padding-left: 63px;
 }
 
 
+
+/*Каталог*/
+
+
+h1 {
+    font-size: 55px;
+    line-height: 55px;
+    margin-top: 72px;
+    margin-bottom: 103px;
+    text-align: center;
+}
+
+.filters {
+    float: left;
+    width: 260px;
+}
+
+.filters h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.price h2 {
+    margin-bottom: 47px;
+}
+
+.price-range {
+    height: 80px;
+    margin-bottom: 14px;
+}
+
+.price-output input[readonly] {
+    width: 80px;
+    height: 34px;
+    padding: 0;
+}
+
+.price-output {
+    margin-bottom: 55px;
+}
+
+.filter ul {
+    padding: 0;
+    list-style: none;
+}
+
+.filter li {
+    margin-bottom: 15px;
+}
+
+.layout.filter {
+    margin-bottom: 40px;
+}
+
+.features-filter {
+    margin-bottom: 50px;
+}
+
+.filters .btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px 87px;
+}
+
+.catalog-right {
+    float: right;
+    width: 760px;
+    font-size: 0;
+    line-height: 0;
+    margin-bottom: 60px;
+}
+
+.sorting {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+    text-transform: uppercase;
+}
+.sorting b {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.sorting ul {
+    float: right;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 49px;
+    list-style: none;
+    font-size: 0;
+    line-height: 0;
+}
+
+.order {
+    float: right;
+}
+
+.sorting ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.sorting li:last-child {
+   margin-right: 0; 
+}
+
+.sorting a {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.template-item {
+    display: inline-block;
+    width: 360px;
+    position: relative;
+    vertical-align: top;
+    margin-right: 40px;
+    margin-bottom: 35px;    
+    font-size: 16px;
+    line-height: 24px;
+    border-top: 41px solid #e9e9e9;
+}
+
+.template-picture img {
+    display: block;
+}
+
+.template-item:last-child,
+.template-item:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.template-item h2 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    
+}
+
+.template-item p {
+    width: 230px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    line-height: 18px;
+}
+
+.template-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+.template-item .hover-block {
+    display: none;
+    width: 360px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 43px;
+    background-color: #eeeeee;
+}
+
+.template-item:hover .hover-block {
+    display: block;
+}
+
+.templates {
+   margin-bottom: 59px;
+}
+
+.paginator {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.paginator li {
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.paginator li:last-child {
+    margin-right: 0;
+}
+
+.paginator li a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.paginator li:last-child a {
+    padding-left: 79px;
+    padding-right: 79px;
+}
+
+main.container {
+    margin-bottom {}
+}
+
+.contacts img {
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
