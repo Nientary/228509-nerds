@@ -26,6 +26,7 @@ body {
 
 .container {
     width: 1160px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -50,11 +51,14 @@ body {
     margin-right: 200px;
 }
 
+.logo img {
+    display: block;
+}
+
 .main-menu {
     float: left;
-    width: 450px;
+    width: 640px;
     margin-top: 74px;
-    
 }
 
 .main-menu ul {
@@ -63,7 +67,6 @@ body {
     margin: 0;
     font-size: 0;
     line-height: 0;
-    text-align: center;
 }
 
 .main-menu ul li {
@@ -99,6 +102,7 @@ body {
 
 .btn {
     display: inline-block;
+    box-sizing: border-box;
     line-height: 18px;
     padding: 16px 53px;
     text-transform: uppercase;
@@ -107,7 +111,7 @@ body {
 
 .contacts {
   position: relative;
-    height: 416px;
+  height: 416px;
 }
 
 
@@ -142,6 +146,7 @@ h2 {
 
 .contact-info .btn {
     margin-top: 22px;
+    padding: 16px 45px;
 }
 
 .main-footer {
@@ -170,7 +175,7 @@ h2 {
 
 .offer {
     float: left;
-    width: 560px;
+    width: 660px;
     line-height: 22px;
     padding-top: 5px;
 }
@@ -194,21 +199,21 @@ h2 {
     position: relative;
     overflow: hidden;
     width: 1160px;
-    height: 423px;
+    height: 431px;
     vertical-align: middle;
 }
 
 .slider-slides {
-    width: 3800px;
     font-size: 0;
-    line-height: 0;
+    line-height: 0;   
 }
 
 .slider-controls {
     position: absolute;
     width: 200px;
     bottom: 90px;
-    left: 470px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
@@ -220,16 +225,11 @@ h2 {
     display: inline-block;
 }
 
-.slide-1,
-.slide-2,
-.slide-3 {
+.slide {
     display: inline-block;
     font-size: 0;
-}
-
-.slide-1,
-.slide-2 {
-    margin-right: 120px;
+    line-height: 431px;
+    border-top: 1px solid transparent;
 }
 
 .slide-left {
@@ -239,7 +239,7 @@ h2 {
     vertical-align: top;
     line-height: 24px;
     margin-right: 15px;
-    margin-top: 65px;
+    margin-top: 77px;
 }
 
 .slide-right {
@@ -247,7 +247,6 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     margin-right: 0;
-        
 }
 
 .slider .slogan {
@@ -263,16 +262,32 @@ h2 {
     margin-bottom: 41px;
 }
 
+.slide-1 .slide-left {
+    margin-top: 73px;
+}
+
+.slide-1 .slogan {
+    margin-top: 5px;
+    margin-bottom: 27px;
+}
+
 .slide-1 .slide-right {
-    margin-top: -11px;
-    margin-left: 6px;
+    margin-left: 5px;
+    
+}
+
+.slide:not(.slide-1) {
+    display: none;
 }
 
 .slide-2 .slide-left {
     position: relative;
     width: 510px;
-    margin-top: 70px;
     z-index: 1;
+}
+
+.slide-2 .slogan {
+    margin-bottom: 27px;
 }
 
 .slide-2 p {
@@ -281,13 +296,11 @@ h2 {
 
 .slide-2 .slide-right {
     margin-left: -125px;
-    margin-top: -4px;
 }
 
 .slide-3 .slide-left {
     position: relative;
     width: 510px;
-    margin-top: 70px;
     z-index: 1;
 }
 
@@ -297,7 +310,8 @@ h2 {
 
 .slide-3 .slide-right {
     margin-left: -125px;
-    margin-top: -6px;
+    margin-top: -3px;
+    
 }
 
 
@@ -425,34 +439,35 @@ h2 {
 .portfolio a {
     display: inline-block;
     vertical-align: middle;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.portfolio a:first-child,
+.portfolio a:nth-child(4) {
+    width: 280px;
 }
 
 .portfolio a img {
-    margin-left: 0;
-    margin-top: 0;
+    display: block;
+    max-width: 210px;
+    min-width: 172px;
+    margin: 0 auto;
 }
 
-.portfolio a:first-child {
-    padding-left: 31px;
-    padding-right: 49px;
-    border-right: 2px solid #eeeeee;
+.portfolio a:first-child img {
+    padding-right: 20px;
 }
 
-.portfolio a:nth-child(2) {
-    padding: 0 45px;
-    margin-top: -5px;
-    border-right: 2px solid #eeeeee;
+.portfolio a:last-child img {
+    padding-left: 20px;
 }
 
+.portfolio a:nth-child(2),
 .portfolio a:nth-child(3) {
-    padding-left: 57px;
-    padding-right: 56px;
-    border-right: 2px solid #eeeeee;
+    margin-top: -6px;
 }
 
-.portfolio a:nth-child(4) {
-    padding-left: 63px;
-}
 
 
 
@@ -515,6 +530,7 @@ h1 {
 }
 
 .filters .btn {
+    width: 100%;
     font-size: 16px;
     line-height: 18px;
     padding: 15px 87px;
@@ -535,15 +551,18 @@ h1 {
     text-transform: uppercase;
 }
 .sorting b {
+    float: left;
+    width: 150px;
     font-size: 18px;
     line-height: 18px;
 }
 
 .sorting ul {
-    float: right;
+    float: left;
     padding: 0;
     margin-top: 3px;
     margin-right: 49px;
+    margin-left: 250px;
     list-style: none;
     font-size: 0;
     line-height: 0;
@@ -582,6 +601,8 @@ h1 {
 
 .template-picture img {
     display: block;
+    width: 100%;
+
 }
 
 .template-item:last-child,
@@ -617,7 +638,7 @@ h1 {
     text-align: center;
     position: absolute;
     z-index: 1;
-    bottom: 5px;
+    bottom: 0;
     padding-top: 15px;
     padding-bottom: 43px;
     background-color: #eeeeee;
