@@ -9,7 +9,8 @@ section,
 footer,
 .container,
 .container > div,
-.slider-controls {
+.slider-controls,
+.btn {
     outline: 1px solid black;
 }
 
@@ -20,7 +21,6 @@ body {
     line-height: 24px;
     font-family: "Roboto", "Arial", sans-serif;
     color: #283136;
-    padding: 0 20px;
     margin: 0;
 }
 
@@ -104,9 +104,10 @@ body {
     display: inline-block;
     box-sizing: border-box;
     line-height: 18px;
-    padding: 16px 53px;
+    padding: 16px 15px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 }
 
 .contacts {
@@ -146,7 +147,7 @@ h2 {
 
 .contact-info .btn {
     margin-top: 22px;
-    padding: 16px 45px;
+    width: 219px;
 }
 
 .main-footer {
@@ -226,10 +227,13 @@ h2 {
 }
 
 .slide {
-    display: inline-block;
+    display: none;
     font-size: 0;
-    line-height: 431px;
     border-top: 1px solid transparent;
+}
+
+.slide-1 {
+    display: block;
 }
 
 .slide-left {
@@ -253,8 +257,11 @@ h2 {
     font-size: 55px;
     line-height: 55px;
     font-family: "Roboto Medium", sans-serif;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px; 
+}
+
+.slider .btn {
+    width: 240px;
 }
 
 .slide-left p {
@@ -274,10 +281,6 @@ h2 {
 .slide-1 .slide-right {
     margin-left: 5px;
     
-}
-
-.slide:not(.slide-1) {
-    display: none;
 }
 
 .slide-2 .slide-left {
@@ -348,7 +351,7 @@ h2 {
 }
 
 .option .btn {
-    padding: 16px 40px;
+    width: 160px;
 }
 
 .index-content {
@@ -533,7 +536,7 @@ h1 {
     width: 100%;
     font-size: 16px;
     line-height: 18px;
-    padding: 15px 87px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .catalog-right {
@@ -559,10 +562,12 @@ h1 {
 
 .sorting ul {
     float: left;
+    width: 490px;
     padding: 0;
     margin-top: 3px;
     margin-right: 49px;
-    margin-left: 250px;
+    margin-left: 51px;
+    text-align: right;
     list-style: none;
     font-size: 0;
     line-height: 0;
@@ -648,6 +653,10 @@ h1 {
     display: block;
 }
 
+.hover-block .btn {
+    width: 200px;
+}
+
 .templates {
    margin-bottom: 59px;
 }
@@ -677,9 +686,9 @@ h1 {
     padding-right: 20px;
 }
 
-.paginator li:last-child a {
-    padding-left: 79px;
-    padding-right: 79px;
+.paginator .btn {
+    min-width: 260px;
+    max-width: 280px;
 }
 
 main.container {
