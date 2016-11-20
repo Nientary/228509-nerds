@@ -59,53 +59,42 @@
                   <div class="filter layout">
                       <h2>Сетка</h2>
                       <ul>
-                          <li>
-                              <label>
-                                  <input type="radio" name="layout" value="adaptive">
-                                  Адаптивная
-                              </label>
+                          <li>                            
+                              <input id="adaptive" type="radio" name="layout" value="adaptive">
+                              <label for="adaptive">Адаптивная</label>
                           </li>
-                          <li>
-                              <label>                       
-                                  <input type="radio" name="layout" value="fixed">
-                                  Фиксированная
-                              </label>
+                          <li>                                              
+                              <input id="fixed" type="radio" name="layout" value="fixed">
+                              <label for="fixed">Фиксированная</label>                              
                           </li>
-                          <li>
-                              <label>                               
-                                  <input type="radio" name="layout" value="elastic">
-                                  Резиновая
-                              </label>
+                          <li>                                                          
+                              <input id="elastic" type="radio" name="layout" value="elastic">
+                              <label for="elastic"> Резиновая</label>                              
                           </li>
                         </ul>
                   </div>
                   <div class="filter features-filter">
                       <h2>Особенности:</h2>
                       <ul>
-                          <li>
-                              <label>
-                                  <input type="checkbox" checked>Слайдер
-                              </label>
+                          <li>                             
+                              <input id="check-slider" type="checkbox" checked>
+                              <label for="check-slider">Слайдер</label>
                           </li>
                           <li>
-                              <label>
-                                  <input type="checkbox">Блок преимуществ
-                              </label>
+                              <input id="check-features" type="checkbox">
+                              <label for="check-features">Блок преимуществ</label>
                           </li>
                           <li>
-                              <label>
-                                  <input type="checkbox" checked>Новости
-                              </label>
+                              <input id="check-news" type="checkbox" checked>
+                              <label for="check-news">Новости</label>
                           </li>
                           <li>
-                              <label>
-                                  <input type="checkbox">Галерея
-                              </label>
+                              <input id="check-gallery" type="checkbox">
+                              <label for="check-gallery">Галерея</label>
                           </li>
                           <li>
-                              <label>
-                                  <input type="checkbox">Корзина
-                              </label>
+                              <input id="check-basket" type="checkbox">
+                              <label for="check-basket">Корзина</label>
                           </li>
                       </ul>
                     </div>
@@ -116,19 +105,19 @@
               <div class="sorting clearfix">
                   <b>Сортировать:</b>
                   <ul>
-                      <li><a href="#">По цене</a></li>
+                      <li><a class="active" href="#">По цене</a></li>
                       <li><a href="#">По типу</a></li>
                       <li><a href="#">По названию</a></li>                   
                   </ul>
                   <div class="order">
-                      <a href="#">1</a>
-                      <a href="#">2</a>
+                      <a class="active" href="#"></a>
+                      <a href="#"></a>
                   </div>
               </div>
               <div class="templates">
                   <div class="template-item">
                   <div class="template-picture">
-                      <img src="img/template1.jpg" alt="Седона" width="358" height="576">
+                      <img src="img/template1.jpg" alt="Седона" width="360" height="575">
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">Sedona</a></h2>
@@ -138,7 +127,7 @@
                   </div>
                   <div class="template-item">
                       <div class="template-picture">
-                          <img src="img/template2.jpg" alt="Pink" width="358" height="576">
+                          <img src="img/template2.jpg" alt="Pink" width="360" height="575">
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">Pink App</a></h2>
@@ -148,7 +137,7 @@
                   </div>
                   <div class="template-item">
                       <div class="template-picture">
-                          <img src="img/template3.jpg" alt="Borodinski" width="358" height="576">
+                          <img src="img/template3.jpg" alt="Borodinski" width="360" height="575">
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">Барбершоп Borodinski</a></h2>
@@ -158,7 +147,7 @@
                   </div>
                   <div class="template-item">
                       <div class="template-picture">
-                          <img src="img/template4.jpg" alt="Мишка" width="358" height="576">                         
+                          <img src="img/template4.jpg" alt="Мишка" width="360" height="575">                         
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">Mishka</a></h2>
@@ -168,7 +157,7 @@
                   </div>
                   <div class="template-item">      
                       <div class="template-picture">
-                          <img src="img/template5.jpg" alt="А+" width="358" height="576">
+                          <img src="img/template5.jpg" alt="А+" width="360" height="575">
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">A+</a></h2>
@@ -178,7 +167,7 @@
                   </div>
                   <div class="template-item">
                       <div class="template-picture">
-                          <img src="img/template6.jpg" alt="Квас" width="358" height="576">
+                          <img src="img/template6.jpg" alt="Квас" width="360" height="575">
                       </div>
                       <div class="hover-block">
                           <h2><a href="#">Крафтовый квас</a></h2>
@@ -189,7 +178,7 @@
               </div>
               <ul class="paginator">
                   <li>
-                      <a class="disabled">1</a>
+                      <a class="active">1</a>
                   </li>
                   <li>
                       <a href="#">2</a>
@@ -218,9 +207,9 @@
       <footer class="main-footer">
           <div class="container clearfix">
               <section class="social-buttons">
-                  <a href="#">Vk</a>
-                  <a href="#">Fb</a>
-                  <a href="#">Инстаграм</a>
+                  <a class="social-vk" href="#">Vk</a>
+                  <a class="social-fb" href="#">Fb</a>
+                  <a class="social-inst" href="#">Инстаграм</a>
               </section>
               <div class="offer">
                   <b class="offer-title">Давайте дружить, это выгодно!</b>
