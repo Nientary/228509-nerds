@@ -214,8 +214,13 @@ body {
 }
 
 .btn-gray:active {
+    color: rgba(0, 0, 0, 0.3);
     background: #d5d5d5;
     box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+button.btn:active {
+    outline: none;
 }
 
 h2 {
@@ -253,6 +258,10 @@ h2 {
     font-weight: bold;
     text-align: left;
     letter-spacing: 0.1px;
+}
+
+.contact-info p {
+    color: #666666;
 }
 
 .contact-info .btn {
@@ -350,6 +359,129 @@ h2 {
     margin: 0;
 }
 
+.modal-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    margin-top: -295px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 760px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 69px;
+    padding-bottom: 84px;
+    background: #ffffff;
+    font-size: 0;
+    box-shadow: 0 15px 45px 3px rgba(0, 0, 0, 0.75)
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 78px;
+    right: 90px;
+    width: 21px;
+    height: 21px;
+    background: #ffffff url("../img/sprites.png") -265px -15px;
+    border: none;
+    opacity: 0.3;
+}
+
+.modal-content-close:hover {
+    opacity: 1;
+}
+
+.modal-content-close:active {
+    opacity: 0.1;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.write-us label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+    
+}
+
+.write-us .form-group {
+    display: inline-block;
+    width: 360px;
+}
+
+.write-us .form-group:first-child {
+    margin-right: 40px;
+}
+
+.write-us input {
+    box-sizing: border-box;
+    width: 360px;
+    margin-bottom: 34px;
+    padding: 14px 14px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+
+.write-us textarea {
+    box-sizing: border-box;
+    width: 760px;
+    height: 118px;
+    resize: none;
+    margin-bottom: 33px;
+    padding: 11px 13px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.write-us input:invalid,
+.write-us textarea:invalid {
+    border-color: #e74246;
+    outline: none;
+    color: #e74246;
+    background: #ffffff;
+}
+
+.write-us placeholder {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #444444;
+    opacity: 0.5;
+}
+
+.write-us .btn {
+    width: 260px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
 
 
 /*Главная*/
@@ -413,13 +545,12 @@ h2 {
 }
 
 .slide {
-    font-size: 0;
-    border-top: 1px solid transparent;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 431px;
+    font-size: 0;
 }
 
 .slide-left {
@@ -427,24 +558,24 @@ h2 {
     position: relative;
     z-index: 2;
     width: 380px;
-    font-size: 16px;
     vertical-align: top;
-    line-height: 24px;
     margin-right: 15px;
     margin-top: 77px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .slide-right {
     width: 760px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     margin-right: 0;
 }
 
 .slider .slogan {
     font-size: 55px;
     line-height: 55px;
-    margin-bottom: 25px; 
+    margin-bottom: 27px; 
     color: #000000;
     letter-spacing: 0.2px;
     font-weight: 500;
@@ -452,20 +583,12 @@ h2 {
 
 .slider .btn {
     width: 240px;
+    margin-bottom: 80px;
 }
 
 .slide-left p {
     width: 330px;
     margin-bottom: 41px;
-}
-
-.slide-1 .slide-left {
-    margin-top: 70px;
-}
-
-.slide-1 .slogan {
-    margin-top: 5px;
-    margin-bottom: 27px;
 }
 
 .slide-1 p {
@@ -483,7 +606,6 @@ h2 {
 
 .slide-2 .slogan {
     width: 530px;
-    margin-bottom: 27px;
 }
 
 .slide-2 p {
@@ -646,7 +768,7 @@ h2 {
 }
 
 .index-content-right .promo {
-    margin-bottom: 48px;
+    margin-bottom: 59px;
     margin-left: 15px;
     text-transform: uppercase;
     font-weight: bold;
