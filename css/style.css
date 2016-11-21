@@ -74,7 +74,7 @@ body {
 .main-menu a {
     display: block;
     position: relative;
-    padding-bottom: 11px;
+    padding-bottom: 6px;
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
@@ -83,7 +83,7 @@ body {
     font-weight: 500;
 }
 
-.main-menu a.active::after {
+.main-menu .active::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -98,6 +98,7 @@ body {
 }
 
 .main-menu a:active {
+    color: #000000;
     opacity: 0.3;
 }
 
@@ -134,15 +135,15 @@ body {
 }
 
 .user-block a:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.user-block a.active::after {
+.user-block .active::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 0px;
+    left: 2px;
+    right: 0px;
     height: 2px;
     background: #fb565a;
 }
@@ -342,6 +343,7 @@ h2 {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 10px;
+    text-transform: none;
 }
 
 .offer p {
@@ -587,7 +589,7 @@ h2 {
     padding-left: 17px;
 }
 
-b.lead {
+.index-content .lead {
     display: block;
     font-size: 45px;
     line-height: 45px;
@@ -744,6 +746,7 @@ h1 {
     margin-bottom: 108px;
     text-align: center;
     color: #000000;
+    font-weight: 500;
 }
 
 .filters {
@@ -1163,20 +1166,24 @@ h1 {
 }
 
 .paginator a:active {
-    padding-top: 14px;
     color: #a9a9a9;
     background: #d5d5d5;
-    border-top: 3px solid #bfbfbf;
+    box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .paginator .active {
-    padding-top: 14px;
+    padding-top: 13px;
     background: #ffffff;
     border: 3px solid #dbdbdb;
 }
 
 .paginator .active:hover {
     background: #ffffff;
+}
+
+.paginator .active:active {
+    box-shadow: none;
+    color: #000000;
 }
 
 .paginator .btn {
