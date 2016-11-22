@@ -1362,14 +1362,3 @@ h1 {
     min-width: 260px;
     max-width: 280px;
 }
-
-main.container {
-    margin-bottom {}
-}
-
-.contacts img {
-    display: block;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
