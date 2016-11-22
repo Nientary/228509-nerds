@@ -510,7 +510,9 @@ h2 {
 }
 
 .write-us input:invalid,
-.write-us textarea:invalid {
+.write-us textarea:invalid,
+input.invalid,
+textarea.invalid {
     border-color: #e74246;
     outline: none;
     color: #e74246;
