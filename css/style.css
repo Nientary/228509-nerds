@@ -1,6 +1,7 @@
 /*Общее*/
 
 body {
+    min-width: 1200px;
     font-size: 16px;
     line-height: 24px;
     font-family: "Roboto", "Arial", sans-serif;
@@ -21,6 +22,7 @@ body {
 }
 
 .main-header {
+    min-width: 1200px;
     margin-bottom: 60px;
     background: #eeeeee;
 }
@@ -67,7 +69,7 @@ body {
     margin-right: 47px;
 }
 
-.main-menu ul li:last-child {
+.main-menu li:last-child {
     margin-right: 0;
 }
 
@@ -878,7 +880,7 @@ textarea.invalid {
     display: none;
 }
 
-.portfolio a img {
+.portfolio-img {
     display: block;
     max-width: 210px;
     min-width: 172px;
@@ -886,11 +888,11 @@ textarea.invalid {
     opacity: 0.2;
 }
 
-.portfolio a:first-child img {
+a:first-child .portfolio-img {
     padding-right: 20px;
 }
 
-.portfolio a:last-child img {
+a:last-child .portfolio-img {
     padding-left: 20px;
 }
 
@@ -899,11 +901,11 @@ textarea.invalid {
     margin-top: -6px;
 }
 
-.portfolio a:hover img {
+a:hover .portfolio-img {
     opacity: 1;
 }
 
-.portfolio a:active img {
+a:active .portfolio-img {
     opacity: 0.1;
 }
 
@@ -1141,7 +1143,7 @@ h1 {
     margin-top: -1px;
 }
 
-.sorting ul li {
+.sorting li {
     display: inline-block;
     margin-right: 25px;
 }
@@ -1285,7 +1287,7 @@ h1 {
     margin-bottom: -3px;
 }
 
-.hover-block h2 a {
+.template-link {
     color: #000000;
     text-decoration: none;
 }
@@ -1329,10 +1331,6 @@ h1 {
     border-radius: 3px;
 }
 
-.paginator li:last-child a {
-    padding: 16px 20px;
-}
-
 .paginator a:hover {
     background: #dfdfdf;
 }
@@ -1361,4 +1359,5 @@ h1 {
 .paginator .btn {
     min-width: 260px;
     max-width: 280px;
+    padding: 16px 20px;
 }
